@@ -42,8 +42,8 @@ int menu(){
 void kayitekle(struct Book kitaplar[],int* kitapsay){
 	int secim;
 	
-			printf("kitap adi:\n");scanf("%s",kitaplar[*kitapsay].name);
-	        printf("yazar adi:\n");scanf("%s",kitaplar[*kitapsay].yazar);
+			printf("kitap adi:\n");getchar("%c",kitaplar[*kitapsay].name);
+	        printf("yazar adi:\n");getchar("%c",kitaplar[*kitapsay].yazar);
     	    printf("yayin tarihi:\n");scanf("%d",&kitaplar[*kitapsay].tarih);
     	    printf("sayfa sayisi:\n");scanf("%d",&kitaplar[*kitapsay].sayfasayisi);
     	    printf("kac adet:\n");scanf("%d",&kitaplar[*kitapsay].sayi);
